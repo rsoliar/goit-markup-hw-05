@@ -25,7 +25,7 @@
           >
           <ul class="site-nav">
             <li class="nav-element">
-              <a class="nav-link" href="./index.html">Студія</a>
+              <a class="nav-link link-current" href="./index.html">Студія</a>
             </li>
             <li class="nav-element">
               <a class="nav-link" href="./portfolio.html">Портфоліо</a>
@@ -62,7 +62,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- Advantages -->
@@ -126,20 +128,31 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-sample">
             <li>
-              <img
-                src="./images/development.jpg"
-                alt="Програмування"
-                width="370"
-              />
+              <div class="work-div">
+                <img
+                  src="./images/development.jpg"
+                  alt="Програмування"
+                  width="370"
+                />
+                <p class="label-work">Десктопні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/mobileapp.jpg"
-                alt="Мобільні додатки"
-                width="370"
-              />
+              <div class="work-div">
+                <img
+                  src="./images/mobileapp.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                />
+                <p class="label-work">Мобільні додатки</p>
+              </div>
             </li>
-            <li><img src="./images/design.jpg" alt="Дизайн" width="370" /></li>
+            <li>
+              <div class="work-div">
+                <img src="./images/design.jpg" alt="Дизайн" width="370" />
+                <p class="label-work">Дизайнерські рішення</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -551,5 +564,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg width="18px" height="18px">
+            <use href="./images/icons.svg#icon-modal-close-sign"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
