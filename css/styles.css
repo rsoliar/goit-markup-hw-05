@@ -723,6 +723,10 @@ p {
   bottom: -1px;
 }
 
+.nav-link.link-current {
+  color: var(--accent-color);
+}
+
 .nav-element {
   position: relative;
 }
